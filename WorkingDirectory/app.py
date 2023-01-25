@@ -93,10 +93,10 @@ def on_postback(event):
     if "True" in event.postback.data:
         # Databaseに接続
         connection = MySQLdb.connect(
-            host='mineiohara.mysql.pythonanywhere-services.com',
-            user='mineiohara',
-            passwd='A010203a0856@',
-            db='mineiohara$UserConfiguration')
+            host='',
+            user='',
+            passwd='',
+            db='')
         cursor = connection.cursor()
 
         # データ取得
